@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row  py-5">
+    <div
+        class="col-md-6 col-12 order-2 order-md-1 d-flex justify-content-center justify-content-lg-start align-items-center">
+        <div class="me-0 ">
+            <h2 class="fw-bolder fs-1">ENJOY YOUR <span class="text-danger ">HEALTHY</span> <br> <span
+                    class="fw-medium">DELICIOUS FOOD</span></h2>
+            <p>Let's start do your order now</p>
+            <a class="text-decoration-none text-white bg-danger px-2 py-2 " href="{% url 'meal:items' %}">Order
+                Now</a>
+        </div>
+    </div>
+    <div
+        class="col-md-6 col-12 order-1 order-md-2 d-flex justify-content-center justify-content-lg-end  align-items-center ">
+        <img src="{% static 'images/food.png' %}" alt="" class="w-75">
+    </div>
+</div>
+{% endblock %}

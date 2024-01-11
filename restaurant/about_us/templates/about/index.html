@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row  py-5">
+
+    <div class="col-md-6 col-12  d-flex justify-content-center   align-items-center ">
+        <img src="{% static 'images/my-pic.jpg' %}" alt="" class="w-50 rounded-4">
+    </div>
+    <div class="col-md-6 col-12  d-flex justify-content-center justify-content-lg-start align-items-center">
+        <div class="me-0 mt-5 mt-md-0 pe-3">
+            <h2 class="fw-bolder fs-1">About <span class="text-danger">Tikkaway 🍽</span> </h2>
+            <br>
+            <p>Welcome to Tikkaway, where culinary excellence meets the vibrant flavors of Bangladeshi cuisine. I am
+                Intisar
+                Ahmed Siyan, the proud owner of Tikkaway, and it is my pleasure to share our story with you.
+                <br>
+                <br>
+
+                <span class="fw-bold fs-5">Our Vision</span>
+                <br>
+                At Tikkaway, we are passionate about delivering an authentic and delightful dining experience. Our
+                vision is rooted in offering a diverse menu that captures the essence of Indian street food and
+                traditional recipes. We strive to create a warm and inviting atmosphere where every bite tells a story
+                of tradition, quality, and innovation.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
